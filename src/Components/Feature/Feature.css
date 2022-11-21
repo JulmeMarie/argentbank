@@ -18,3 +18,25 @@
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+
+@media (min-width: 920px) {
+    .feature-icon {
+        width: 135px;
+        border: 15px solid #00bc77;
+        border-radius: 50%;
+        padding: 2rem;
+    }
+
+    .feature-item-title {
+        font-size: 1.75rem;
+
+    }
+
+    .feature-item {
+        padding: 3.6rem;
+    }
+
+    .feature-item p {
+        font-size: 1.5rem;
+    }
+}

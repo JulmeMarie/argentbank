@@ -19,3 +19,18 @@
     text-decoration: none;
     margin-right: 0.5rem;
 }
+
+@media (min-width: 920px) {
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .Nav {
+        padding: 6px 30px;
+    }
+
+    .Nav .logo-img {
+        width: 300px;
+    }
+}

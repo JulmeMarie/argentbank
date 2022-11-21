@@ -16,11 +16,12 @@ const Features = () => {
   const paragraphs = {
     chat: "Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes.",
     money: "The more you save with us, the higher your interest rate will be!",
-    security: ""
+    security: "We use top of the line encryption to make sure your data and money is always safe."
   }
 
   return (
     <div className="Features" data-testid="Features">
+      <h2 className="sr-only">Features</h2>
       <Feature src={chatSrc} title={titles.chat} paragraph={paragraphs.chat} />
       <Feature src={moneySrc} title={titles.money} paragraph={paragraphs.money} />
       <Feature src={securitySrc} title={titles.security} paragraph={paragraphs.security} />
