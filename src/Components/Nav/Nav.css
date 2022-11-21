@@ -1,0 +1,21 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.Nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.Nav .logo-img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.Nav .nav-item {
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
