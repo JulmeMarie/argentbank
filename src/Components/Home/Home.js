@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Main.css';
+import './Home.css';
 import Hero from '../Hero/Hero';
 import Features from '../Features/Features';
 
-const Main = () => (
-  <div className="Main" data-testid="Main">
+const Home = () => (
+  <div className="Home" data-testid="Home">
     <Hero />
     <Features />
   </div>
 );
 
-Main.propTypes = {};
+Home.propTypes = {};
 
-Main.defaultProps = {};
+Home.defaultProps = {};
 
-export default Main;
+export default Home;
