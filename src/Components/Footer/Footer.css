@@ -9,9 +9,3 @@
     margin: 0;
     padding: 0;
 }
-
-@media (min-width: 920px) {
-    .footer-text {
-        font-size: 1.5rem;
-    }
-}

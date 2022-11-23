@@ -1,8 +1,3 @@
-.SigninForm {
-    padding-top: 0.5rem;
-    height: 85vh;
-}
-
 .sign-in-button {
     display: block;
     width: 100%;
@@ -25,7 +20,7 @@
 }
 
 .sign-in-icon {
-    font-size: 1.3rem;
+    font-size: 5rem;
 }
 
 .input-remember {
@@ -50,57 +45,4 @@
 .input-wrapper input {
     padding: 5px;
     font-size: 1.2rem;
-}
-
-@media (min-width: 720px) {
-    .SigninForm {
-        padding-top: 1.2rem;
-    }
-
-    .sign-in-content {
-        width: 450px;
-        padding: 3rem;
-    }
-
-    .input-wrapper label {
-        font-size: 1.5rem;
-    }
-
-    .input-wrapper {
-        margin-bottom: 2rem;
-    }
-
-    .input-wrapper input {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    .sign-in-content h1 {
-        font-size: 2.3rem;
-
-    }
-
-    .input-remember label {
-        font-size: 1.5rem;
-    }
-
-    input[type=checkbox] {
-        /* Double-sized Checkboxes */
-        -ms-transform: scale(1.5);
-        /* IE */
-        -moz-transform: scale(1.5);
-        /* FF */
-        -webkit-transform: scale(1.5);
-        /* Safari and Chrome */
-        -o-transform: scale(1.5);
-        /* Opera */
-        transform: scale(1.5);
-        padding: 10px;
-    }
-
-    .sign-in-button {
-        padding: 15px;
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-    }
 }

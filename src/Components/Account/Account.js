@@ -9,9 +9,9 @@ const Account = (props) => {
   return (
     <div className="Account" data-testid="Account">
       <div className="account-content-wrapper">
-        <h3 className="account-title">Argent Bank Checking (x8349)</h3>
-        <p className="account-amount">$2,082.79</p>
-        <p className="account-amount-description">Available Balance</p>
+        <h3 className="account-title">{compte.name}</h3>
+        <p className="account-amount">{compte.amount}</p>
+        <p className="account-amount-description">{compte.avalability}</p>
       </div>
       <div className="account-content-wrapper cta">
         <button className="transaction-button">View transactions</button>
