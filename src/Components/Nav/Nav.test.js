@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Nav from './Nav';
 
-describe('<Nav />', () => {
+/* describe('<Nav />', () => {
   test('it should mount', () => {
     render(<Nav />);
     
@@ -11,4 +11,4 @@ describe('<Nav />', () => {
 
     expect(nav).toBeInTheDocument();
   });
-});
+}); */

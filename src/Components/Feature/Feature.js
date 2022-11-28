@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Feature.css';
 
 const Feature = (props) => (
@@ -9,9 +8,4 @@ const Feature = (props) => (
     <p>{props.paragraph}</p>
   </div>
 );
-
-Feature.propTypes = {};
-
-Feature.defaultProps = {};
-
 export default Feature;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Features.css';
 import Feature from '../Feature/Feature';
 import moneySrc from '../../img/icon-money.png';
@@ -28,9 +27,5 @@ const Features = () => {
     </div>
   );
 }
-
-Features.propTypes = {};
-
-Features.defaultProps = {};
 
 export default Features;

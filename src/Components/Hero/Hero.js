@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Hero.css';
 
 const Hero = () => (
@@ -13,9 +12,5 @@ const Hero = () => (
     </section>
   </div>
 );
-
-Hero.propTypes = {};
-
-Hero.defaultProps = {};
 
 export default Hero;

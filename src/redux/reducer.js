@@ -1,28 +1,48 @@
+/**
+ * Global state from the start
+ */
 export const initialState = {
-    name: "JULME"
+    firstName: null,
+    lastName: null,
+    token: null
 };
 
 export const reducer = (state = initialState, action) => {
     const newState = { ...state };
-    if (action.type === "update") {
-        newState.name = action.payload;
+    if (action.type === "setFirstName") {
+        newState.firstName = action.payload;
     }
-    if (action.type === "restore") {
-        newState.name = initialState.name;
+    if (action.type === "setLastName") {
+        newState.lastName = action.payload;
+    }
+    if (action.type === "setToken") {
+        newState.token = action.payload;
     }
     return newState;
 }
 
-
+/**
+ * Allows to access the state elements
+ * @param {*} state 
+ * @returns 
+ */
 export const mapStateToProps = (state) => {
     return {
-        name: state.name
+        firstName: state.firstName,
+        lastName: state.lastName,
+        token: state.token
     }
 }
 
-export const mapDispatchToProps = dispatch => {
+/**
+ * Allows to update state elements throw methods
+ * @param {*} dispatch 
+ * @returns 
+ */
+export const mapDispatchToProps = (dispatch) => {
     return {
-        update: (name) => dispatch({ type: 'update', payload: name }),
-        restore: () => dispatch({ type: 'restore' })
+        setFirstName: (firstName) => dispatch({ type: 'setFirstName', payload: firstName }),
+        setLastName: (lastName) => dispatch({ type: 'setLastName', payload: lastName }),
+        setToken: (token) => dispatch({ type: 'setToken', payload: token })
     }
 }

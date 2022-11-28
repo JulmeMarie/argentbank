@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './AccountList.css';
 import Account from '../Account/Account';
 
@@ -33,9 +32,4 @@ const AccountList = () => {
     </div>
   );
 }
-
-AccountList.propTypes = {};
-
-AccountList.defaultProps = {};
-
 export default AccountList;

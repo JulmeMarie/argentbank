@@ -1,0 +1,19 @@
+.UserEditForm {}
+
+.UserEditForm form div {
+    margin-bottom: 1rem;
+}
+
+.UserEditForm form div input {
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.UserEditForm form div button {
+    margin-right: 1rem;
+    padding: 0.4rem;
+    width: 6rem;
+    color: #00bc77;
+    text-transform: capitalize;
+    background-color: white;
+}

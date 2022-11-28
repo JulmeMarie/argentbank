@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import './Footer.css';
-import { connect } from "react-redux";
-import { mapStateToProps, mapDispatchToProps } from "../../redux/reducer";
+
 
 const Footer = (props) => {
 
@@ -13,10 +11,4 @@ const Footer = (props) => {
   );
 }
 
-Footer.propTypes = {};
-
-Footer.defaultProps = {};
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Footer);
+export default Footer;
