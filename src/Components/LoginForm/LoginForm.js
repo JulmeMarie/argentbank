@@ -6,7 +6,6 @@ import { mapStateToProps, mapDispatchToProps } from '../../redux/reducer';
 import UserService from '../../services/UserService';
 import { useNavigate } from 'react-router-dom';
 
-
 const LoginForm = (props) => {
   const navigate = useNavigate();
   /**
@@ -43,7 +42,7 @@ const LoginForm = (props) => {
           <div className="input-remember">
             <input type="checkbox" name="remember-me" id="remember-me" /><label htmlFor="remember-me">Remember me</label>
           </div>
-          <button className="sign-in-button">Sign In</button>
+          <button type="submit" className="sign-in-button">Sign In</button>
         </form>
       </section>
     </main>
