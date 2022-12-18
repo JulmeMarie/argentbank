@@ -18,6 +18,11 @@ export const reducer = (state = initialState, action) => {
     if (action.type === "setToken") {
         newState.token = action.payload;
     }
+    if (action.type === "reset") {
+        newState.firstName = null;
+        newState.lastName = null;
+        newState.token = null;
+    }
     return newState;
 }
 
@@ -43,6 +48,7 @@ export const mapDispatchToProps = (dispatch) => {
     return {
         setFirstName: (firstName) => dispatch({ type: 'setFirstName', payload: firstName }),
         setLastName: (lastName) => dispatch({ type: 'setLastName', payload: lastName }),
-        setToken: (token) => dispatch({ type: 'setToken', payload: token })
+        setToken: (token) => dispatch({ type: 'setToken', payload: token }),
+        reset: () => dispatch({ type: 'reset' })
     }
 }

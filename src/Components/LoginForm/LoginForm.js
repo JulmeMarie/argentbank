@@ -8,18 +8,23 @@ import { useNavigate } from 'react-router-dom';
 
 const LoginForm = (props) => {
   const navigate = useNavigate();
+  const service = new UserService();
+
   /**
    * Allows to handle the submition of the login form
    * @param {*} event 
    */
+
   const handleOnSubmit = (event) => {
     event.preventDefault();
     let form = document.getElementById("singin-form");
+    let remember = document.getElementById("remember-me");
 
-    const service = new UserService();
     service.loginUser(form).then(token => {
       props.setToken(token);
-      service.setTokenToBrowser(token);
+      if (remember.checked) {
+        service.setTokenToBrowser(token);
+      }
       navigate("/user");
 
     }).catch(error => {

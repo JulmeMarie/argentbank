@@ -9,6 +9,10 @@ class UserService {
         localStorage.setItem("argentbank-token", token);
     }
 
+    removeTokenFromBrowser() {
+        localStorage.clear();
+    }
+
     /**
      * Allows to perform user login
      * @param {*} form 
